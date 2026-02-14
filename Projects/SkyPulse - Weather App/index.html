@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="Assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Urbanist:wght@500;700&display=swap" rel="stylesheet">
+    <title>SkyPulse - Weather App</title>
+</head>
+
+<body>
+    <nav>
+        <h1>SkyPulse</h1>
+        <input placeholder="City Name" class="input-style city-name" type="text">
+    </nav>
+    <main class="weather-card">
+        <div class="weather-header">
+            <h2 id="location"><span id="city">City</span>, <span id="country">Country</span></h2>
+            <div class="weather-main">
+                <img id="weather-icon" src="Assets/favicon.svg" alt="Weather Icon" />
+                <span id="condition">Condition</span>
+            </div>
+            <div class="temperature">
+                <span id="temp">0°</span>
+                <span id="feels-like">Feels like <span id="temp-like">0°</span></span>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="detail"><span>Humidity</span><span id="humidity">0%</span></div>
+            <div class="detail"><span>Pressure</span><span id="pressure">0 hPa</span></div>
+            <div class="detail"><span>Wind</span><span id="wind">0 km/h</span></div>
+            <div class="detail"><span>Wind Gust</span><span id="wind-gust">0 km/h</span></div>
+            <div class="detail"><span>Visibility</span><span id="visibility">0 km/h</span></div>
+            <div class="detail"><span>UV Radiation</span><span id="uv">0</span></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
