@@ -1,0 +1,165 @@
+* {
+    color: white;
+}
+
+body {
+    background: #000;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>div>span {
+    margin: 5px;
+    color: rgb(150 159 175);
+    font-size: smaller;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul>li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border: none;
+    width: 400px;
+    margin: 15px;
+    padding: 25px;
+    position: static;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #14151b;
+}
+
+th{
+    text-align: left;
+}
+
+.white{
+    color: white;
+    margin-left: 45px;
+}
+.trade{
+    padding-left: 40px;
+}
+.more{
+    padding-left: 45px;
+}
+.icon {
+    height: 35px;
+}
+
+.search {
+    width: 200px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    background: #202127;
+    position: relative;
+    left: 5px;
+    margin-left:15px;
+}
+
+.nav-div {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 9px;
+    border: none;
+    font-size: smaller;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.su {
+    background-color: #0c2c24;
+    color: #00c278;
+}
+
+.si {
+    background-color: #18253a;
+    color: #4494ff;
+}
+
+.arrow{
+    height: 12px;
+}
+
+
+.bg {
+    background-image: url(Assets/bg.webp);
+    width: 1280px;
+    height: 373px;
+    border: none;
+    border-radius: 15px;
+}
+
+.textbox {
+    position: relative;
+    bottom: -60%;
+    left: 20px;
+}
+
+.text1 {
+    font-size: 40px;
+}
+
+.text2 {
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 20px;
+}
+
+.btn2 {
+    background: white;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.tables{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 325px;
+}
+
+.heading{
+    width: 1280px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.profit{
+    color: green;
+}
+
+.loss{
+    color: red;
+}
+.back{
+    font-size:20px;
+    font-weight: 700;
+    margin-left: -15px;
+}
