@@ -22,10 +22,7 @@ You are free to view and use the code according to the license, but **cannot cla
 | Project Name | Description | Status |
 |-------------|-------------|--------|
 | Google      | Frontend clone of Google homepage | Completed |
-| Backpack    | UI clone practice | WIP |
-| TGS         | UI clone practice | WIP |
-| VS Code     | UI clone practice | WIP |
-| Zerodha     | UI clone practice | WIP |
+| Backpack    | UI clone practice | Completed |
 
 ### 🖥 Mini & Full-Stack Projects
 | Project Name | Description | Status |
