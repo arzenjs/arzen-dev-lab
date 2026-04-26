@@ -28,16 +28,27 @@ You are free to view and use the code according to the license, but **cannot cla
 | Project Name | Description | Status |
 |-------------|-------------|--------|
 | Rahnuma Guiding Lights Foundation | Self-designed NGO website | Completed |
-| Tic Tac Toe | Mini game built with JS | Completed |
-| SkyPulse    | Weather app built with JS | Completed |
-| iTask       | To-Do App (React + Backend) | Completed |
-| To-Do App  | Basic To-Do app (HTML/JS) | Completed |
-| Form Builder | Dynamic form creation app | Completed |
-| Quiz Page   | Interactive quiz application | Completed |
+| Tic Tac Toe | Logic-based game with win conditions | Completed |
+| Calculator | Functional calculator with arithmetic operations | Completed |
+| SkyPulse    | Weather app with API integration | Completed |
+| iTask       | To-Do App using React (component-based) | Completed |
+| To-Do App  | Basic To-Do app using DOM manipulation | Completed |
+| Form Builder | Dynamic form creation system | Completed |
+| Quiz Page   | Interactive quiz with user input handling | Completed |
 | QuoteCrafter | Random quote generator | Completed |
-| Tell Me a Joke | Joke generator app | Completed |
+| Tell Me a Joke | Joke generator using API | Completed |
 
 ---
+
+## 🧠 Exercises
+
+| Exercise | Description |
+|----------|------------|
+| Background Color Changer | Change background dynamically based on user input/events |
+| File Organizer | Organize files programmatically (logic-based) |
+| PlayWithNumbers | Number-based operations and interactions |
+| Random Color Generator | Generate random colors dynamically |
+| Rough Data to Card Converter | Convert raw data into structured UI cards|
 
 ## 📞 Contact
 
