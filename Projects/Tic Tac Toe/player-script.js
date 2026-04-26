@@ -10,7 +10,6 @@ const winPatterns = [
 
 let isXTurn = true;
 
-
 boxes.forEach(box => {
     box.addEventListener("click", () => {
         box.innerText = isXTurn ? "X" : "O";

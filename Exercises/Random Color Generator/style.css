@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: #386099;
+    padding: clamp(0.5rem, 2vw, 2rem);
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #ff6a88, #ff9a44, #fbc2eb, #a6c1e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: clamp(300px, 70vh, 500px);
+    width: clamp(280px, 50vw, 700px);
+    background-color: #f0f0f0;
+    border-radius: clamp(10px, 2vw, 20px);
+    margin: clamp(1rem, 4vw, 2rem);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: inset 0px 0px 15px 2px black;
+}
+
+main p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: clamp(0.5rem, 2vw, 1rem);
+    text-align: center;
+    display: none;
+}
+
+main p span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+button {
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    border: none;
+    border-radius: clamp(5px, 1vw, 10px);
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: clamp(1rem, 2.5vw, 2rem);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0e0e0;
+  font-family: 'Rajdhani', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.calculator {
+  width: 320px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 10px 10px 20px #bebebe,
+              -10px -10px 20px #ffffff;
+}
+
+/* Display */
+.display {
+  background: #d6d6d6;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Scrollbar hidden */
+.display::-webkit-scrollbar {
+  display: none;
+}
+
+.display-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  white-space: nowrap;
+  text-align: right;
+  min-width: 100%;
+}
+
+/* Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Base button */
+.btn {
+  height: 60px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #e0e0e0;
+  color: #333;
+
+  box-shadow: 5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
+
+  transition: transform 0.1s ease,
+              box-shadow 0.1s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+}
+
+/* Operators */
+.operator {
+  background: #ff9f43;
+  color: #fff;
+}
+
+/* Special */
+.special {
+  background: #ff4d4f;
+  color: #fff;
+}
+
+/* Backspace */
+.backspace {
+  background: #6c757d;
+  color: #fff;
+}
+
+/* Equals */
+.equals {
+  background: #28c76f;
+  color: #fff;
+}
+
+/* Zero */
+.zero {
+  grid-column: span 2;
+}
