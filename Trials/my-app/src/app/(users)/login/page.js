@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import UserComponent from "@src/app/(users)/user/[username]/userComponent";
 
 const page = () => {
@@ -9,9 +10,10 @@ const page = () => {
             email: data.get('email'),
             number: data.get('number')
         }
-        ?Data not parsing
-        return <UserComponent user={userData} />;
+        // NEXT STEP: Write Data in Database.
+        redirect(`/user/${userData.name}`)
     }
+
     return (
         <div className="flex-1 flex items-center justify-center px-4">
             <div className="w-full max-w-md">
@@ -33,10 +35,10 @@ const page = () => {
                             <label htmlFor='number' className="form-label">Phone Number</label>
                             <input name='number' type='number' required placeholder='Enter Your Number' className="form-input" />
                         </div>
-                        <button type="submit" className="w-full py-3 bg-sky-500 hover:bg-sky-400 text-white font-semibold rounded-lg transition duration-200"><a href="/user/[username]" className="text-white no-underline">Sign In</a></button>
+                        <button type="submit" className="w-full py-3 bg-sky-500 hover:bg-sky-400 text-white font-semibold rounded-lg transition duration-200">Sign In</button>
                     </form>
                     <div className="mt-6 text-center">
-                        <p className="text-slate-400 text-sm">Don't have an account?{' '}<Link href="/register" className="text-sky-400 hover:text-sky-300 font-medium transition">Sign up</Link></p>
+                        <p className="text-slate-400 text-sm">Do not have an account?{' '}<Link href="/register" className="text-sky-400 hover:text-sky-300 font-medium transition">Sign up</Link></p>
                     </div>
                 </div>
             </div>

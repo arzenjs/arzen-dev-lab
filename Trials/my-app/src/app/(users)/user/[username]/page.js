@@ -1,8 +1,10 @@
 import UserComponent from "./userComponent"
-const page = async () => {
+
+const Page = async () => {
+
   return (
     <UserComponent/>
   )
 }
 
-export default page
+export default Page

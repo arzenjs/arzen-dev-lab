@@ -2,7 +2,6 @@ const UserComponent = async (props) => {
     const username = await props.username;
     const email = await props.email;
     const number = await props.number;
-    console.log(props);
     return (
         <main className="page-container">
             <h1 className="heading-lg">
