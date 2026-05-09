@@ -2,7 +2,7 @@
 
 A curated collection of my **web development projects** built with:
 
-- **Frontend:** HTML, CSS, JavaScript, React  
+- **Frontend:** HTML, CSS, JavaScript, React, Next.js  
 - **Backend:** Express.js, MongoDB  
 
 This repository showcases **UI clones, mini apps, full-stack projects, and experimental builds** created during my learning journey. Some projects are currently **WIP (Work in Progress)** and will be refined and expanded over time.  
@@ -24,7 +24,7 @@ You are free to view and use the code according to the license, but **cannot cla
 | Google      | Frontend clone of Google homepage | Completed |
 | Backpack    | UI clone practice | Completed |
 
-### 🖥 Mini & Full-Stack Projects
+### 🖥 Mini-Projects
 | Project Name | Description | Status |
 |-------------|-------------|--------|
 | Rahnuma Guiding Lights Foundation | Self-designed NGO website | Completed |
@@ -40,19 +40,10 @@ You are free to view and use the code according to the license, but **cannot cla
 
 ---
 
-## 🧠 Exercises
-
-| Exercise | Description |
-|----------|------------|
-| Background Color Changer | Change background dynamically based on user input/events |
-| File Organizer | Organize files programmatically (logic-based) |
-| PlayWithNumbers | Number-based operations and interactions |
-| Random Color Generator | Generate random colors dynamically |
-| Rough Data to Card Converter | Convert raw data into structured UI cards|
-
 ## 📞 Contact
 
-- GitHub: [arzenjs](https://github.com/arzenjs)  
+- GitHub: [arzenjs](https://github.com/arzenjs)
+- Instagram: [arzenjs](https://www.instagram.com/arzenjs)  
 - Name: **Arzen**  
 - Year: 2026  
 
