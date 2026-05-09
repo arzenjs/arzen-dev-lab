@@ -27,15 +27,15 @@ You are free to view and use the code according to the license, but **cannot cla
 ### 🖥 Mini-Projects
 | Project Name | Description | Status |
 |-------------|-------------|--------|
-| Rahnuma Guiding Lights Foundation | Self-designed NGO website | Completed |
-| Tic Tac Toe | Logic-based game with win conditions | Completed |
-| Calculator | Functional calculator with arithmetic operations | Completed |
-| SkyPulse    | Weather app with API integration | Completed |
-| iTask       | To-Do App using React (component-based) | Completed |
-| To-Do App  | Basic To-Do app using DOM manipulation | Completed |
-| Form Builder | Dynamic form creation system | Completed |
-| Quiz Page   | Interactive quiz with user input handling | Completed |
-| QuoteCrafter | Random quote generator | Completed |
+| Rahnuma Guiding Lights Foundation | NGO website frontend | Completed |
+| Tic Tac Toe | Classic game with game logic | Completed |
+| Calculator | Basic arithmetic calculator | Completed |
+| SkyPulse | Weather app using API data | Completed |
+| iTask | React-based task manager | Completed |
+| To-Do App | Simple task management app | Completed |
+| Form Builder | Dynamic form generator | Completed |
+| Quiz Page | Interactive quiz application | Completed |
+| QuoteCrafter | Random quote generator app | Completed |
 | Tell Me a Joke | Joke generator using API | Completed |
 
 ---
