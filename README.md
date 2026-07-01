@@ -9,15 +9,6 @@ This repository showcases **UI clones, mini apps, full-stack projects, and exper
 
 ---
 
-## 📄 License
-
-Copyright © 2026 Arsalan.
-
-This repository is publicly viewable for learning and demonstration purposes.
-No permission is granted to copy, modify, redistribute, or use this code except as permitted by applicable law.
-
----
-
 ## 🚀 Projects
 
 ### 🗂 Clones
