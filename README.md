@@ -9,13 +9,6 @@ This repository showcases **UI clones, mini apps, full-stack projects, and exper
 
 ---
 
-## 📄 License
-
-All projects in this repository are protected under the **[MIT License](./LICENSE)**.  
-You are free to view and use the code according to the license, but **cannot claim ownership**.  
-
----
-
 ## 🚀 Projects
 
 ### 🗂 Clones
@@ -37,6 +30,15 @@ You are free to view and use the code according to the license, but **cannot cla
 | Quiz Page | Interactive quiz application | Completed |
 | QuoteCrafter | Random quote generator app | Completed |
 | Tell Me a Joke | Joke generator using API | Completed |
+
+---
+
+## 📄 License
+
+Copyright © 2026 Arsalan.
+
+This repository is publicly viewable for learning and demonstration purposes.
+No permission is granted to copy, modify, redistribute, or use this code except as permitted by applicable law.
 
 ---
 
