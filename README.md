@@ -1,52 +1,58 @@
 # 🖤 Arzen Dev Lab
 
-A curated collection of my **web development projects** built with:
+A collection of web development projects built by **Arsalan**, working under the personal/professional name **ARZEN**.
 
-- **Frontend:** HTML, CSS, JavaScript, React, Next.js  
-- **Backend:** Express.js, MongoDB  
+This repository brings together frontend experiments, UI clones, mini-applications, and web projects built while learning and practicing modern web development. Some projects are complete, while others may need further improvements.
 
-This repository showcases **UI clones, mini apps, full-stack projects, and experimental builds** created during my learning journey. Some projects are currently **WIP (Work in Progress)** and will be refined and expanded over time.  
+## 🛠️ Technologies
 
----
+- **Languages:** HTML, CSS, JavaScript
+- **Frontend:** React, Next.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+
+*Technologies vary by project.*
 
 ## 🚀 Projects
 
-### 🗂 Clones
-| Project Name | Description | Status |
-|-------------|-------------|--------|
-| Google      | Frontend clone of Google homepage | Completed |
-| Backpack    | UI clone practice | Completed |
+### 🖥️ UI Clones
 
-### 🖥 Mini-Projects
-| Project Name | Description | Status |
-|-------------|-------------|--------|
-| Rahnuma Guiding Lights Foundation | NGO website frontend | Completed |
-| Tic Tac Toe | Classic game with game logic | Completed |
-| Calculator | Basic arithmetic calculator | Completed |
-| SkyPulse | Weather app using API data | Completed |
-| iTask | React-based task manager | Completed |
-| To-Do App | Simple task management app | Completed |
-| Form Builder | Dynamic form generator | Completed |
-| Quiz Page | Interactive quiz application | Completed |
-| QuoteCrafter | Random quote generator app | Completed |
-| Tell Me a Joke | Joke generator using API | Completed |
+| Project | Description | Status |
+|---|---|---|
+| Google Clone | Frontend recreation of the Google homepage. | Completed |
+| Backpack | UI clone created for frontend practice. | Completed |
+
+### 🧩 Mini Applications
+
+| Project | Description | Status |
+|---|---|---|
+| Rahnuma Guiding Lights Foundation | Frontend for an NGO website. | Completed |
+| SkyPulse | Weather application using API data. | Completed |
+| iTask | React-based task management application. | Completed |
+| Form Builder | Application for creating dynamic forms. | Completed |
+| Tic Tac Toe | Classic game with interactive game logic. | Completed |
+| Calculator | Basic arithmetic calculator. | Completed |
+| To-Do App | Simple task management application. | Completed |
+| Quiz Page | Interactive quiz application. | Completed |
+| QuoteCrafter | Random quote generator. | Completed |
+| Tell Me a Joke | Joke generator using API data. | Completed |
+
+*Project descriptions and completion statuses reflect the current project catalogue and may be updated as projects evolve.*
+
+## 🎯 Purpose
+
+This repository documents my development journey through practical projects, experimentation, and continuous improvement. It serves as a collection of smaller builds alongside my more substantial web applications.
+
+## 📬 Connect
+
+- **GitHub:** [@arzenjs](https://github.com/arzenjs)
+- **LinkedIn:** [Arsalan](https://www.linkedin.com/in/arzenjs/)
+- **Portfolio:** [arsalan-portfolio-beige.vercel.app](https://arsalan-portfolio-beige.vercel.app/)
 
 ---
 
-## 📄 License
+## 📄 Usage and Copyright
 
 Copyright © 2026 Arsalan.
 
-This repository is publicly viewable for learning and demonstration purposes.
-No permission is granted to copy, modify, redistribute, or use this code except as permitted by applicable law.
-
----
-
-## 📞 Contact
-
-- GitHub: [arzenjs](https://github.com/arzenjs)
-- Instagram: [arzenjs](https://www.instagram.com/arzenjs)  
-- Name: **Arzen**  
-- Year: 2026  
-
----
+Unless otherwise specified, the code in this repository is provided for viewing and demonstration purposes. No license is granted to copy, modify, redistribute, or use the code beyond permissions provided by applicable law or separately granted by the author.
