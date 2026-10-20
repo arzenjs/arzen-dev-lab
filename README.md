@@ -34,17 +34,6 @@ This repository brings together frontend experiments, UI clones, mini-applicatio
 | Calculator | Basic arithmetic calculator. | Completed | [View Demo](https://caculator-two-bay.vercel.app/) |
 | To-Do App | Simple task management application. | Completed | [View Demo](https://todo-two-omega-51.vercel.app/) |
 
-### 🧩 Mini Applications
-
-| Project | Description | Status | Live Demo |
-|---|---|---|---|
-| Rahnuma Guiding Lights Foundation | Frontend for an NGO website. | Completed | [View Demo](https://rahnuma-peach.vercel.app/) |
-| SkyPulse | Weather application using API data. | Completed | [View Demo](https://skypulse-gilt.vercel.app/) |
-| iTask | React-based task management application. | Completed | [View Demo](https://itask-kappa.vercel.app/) |
-| Tic Tac Toe | Classic game with interactive game logic. | Completed | [View Demo](https://tic-tac-toe-orcin-zeta.vercel.app/) |
-| Calculator | Basic arithmetic calculator. | Completed | [View Demo](https://caculator-two-bay.vercel.app/) |
-| To-Do App | Simple task management application. | Completed | [View Demo](https://todo-two-omega-51.vercel.app/) |
-
 ### 📚 Beginner Practice Projects
 
 | Project | Description |
