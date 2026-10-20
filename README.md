@@ -10,6 +10,7 @@ This repository brings together frontend experiments, UI clones, mini-applicatio
 - **Frontend:** React, Next.js
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
+- **Deployment:** Vercel
 
 *Technologies vary by project.*
 
@@ -17,27 +18,41 @@ This repository brings together frontend experiments, UI clones, mini-applicatio
 
 ### 🖥️ UI Clones
 
-| Project | Description | Status |
-|---|---|---|
-| Google Clone | Frontend recreation of the Google homepage. | Completed |
-| Backpack | UI clone created for frontend practice. | Completed |
+| Project | Description | Status | Live Demo |
+|---|---|---|---|
+| Google Clone | Frontend recreation of the Google homepage. | Completed | [View Demo](https://google-beta-one.vercel.app/) |
+| Backpack | UI clone created for frontend practice. | Completed | [View Demo](https://backpack-sepia.vercel.app/) |
 
 ### 🧩 Mini Applications
 
-| Project | Description | Status |
-|---|---|---|
-| Rahnuma Guiding Lights Foundation | Frontend for an NGO website. | Completed |
-| SkyPulse | Weather application using API data. | Completed |
-| iTask | React-based task management application. | Completed |
-| Form Builder | Application for creating dynamic forms. | Completed |
-| Tic Tac Toe | Classic game with interactive game logic. | Completed |
-| Calculator | Basic arithmetic calculator. | Completed |
-| To-Do App | Simple task management application. | Completed |
-| Quiz Page | Interactive quiz application. | Completed |
-| QuoteCrafter | Random quote generator. | Completed |
-| Tell Me a Joke | Joke generator using API data. | Completed |
+| Project | Description | Status | Live Demo |
+|---|---|---|---|
+| Rahnuma Guiding Lights Foundation | Frontend for an NGO website. | Completed | [View Demo](https://rahnuma-peach.vercel.app/) |
+| SkyPulse | Weather application using API data. | Completed | [View Demo](https://skypulse-gilt.vercel.app/) |
+| iTask | React-based task management application. | Completed | [View Demo](https://itask-kappa.vercel.app/) |
+| Tic Tac Toe | Classic game with interactive game logic. | Completed | [View Demo](https://tic-tac-toe-orcin-zeta.vercel.app/) |
+| Calculator | Basic arithmetic calculator. | Completed | [View Demo](https://caculator-two-bay.vercel.app/) |
+| To-Do App | Simple task management application. | Completed | [View Demo](https://todo-two-omega-51.vercel.app/) |
 
-*Project descriptions and completion statuses reflect the current project catalogue and may be updated as projects evolve.*
+### 🧩 Mini Applications
+
+| Project | Description | Status | Live Demo |
+|---|---|---|---|
+| Rahnuma Guiding Lights Foundation | Frontend for an NGO website. | Completed | [View Demo](https://rahnuma-peach.vercel.app/) |
+| SkyPulse | Weather application using API data. | Completed | [View Demo](https://skypulse-gilt.vercel.app/) |
+| iTask | React-based task management application. | Completed | [View Demo](https://itask-kappa.vercel.app/) |
+| Tic Tac Toe | Classic game with interactive game logic. | Completed | [View Demo](https://tic-tac-toe-orcin-zeta.vercel.app/) |
+| Calculator | Basic arithmetic calculator. | Completed | [View Demo](https://caculator-two-bay.vercel.app/) |
+| To-Do App | Simple task management application. | Completed | [View Demo](https://todo-two-omega-51.vercel.app/) |
+
+### 📚 Beginner Practice Projects
+
+| Project | Description |
+|---|---|
+| Form Builder | Application for creating dynamic forms. |
+| Quiz Page | Interactive quiz application. |
+| QuoteCrafter | Random quote generator. |
+| Tell Me a Joke | Joke generator using API data. |
 
 ## 🎯 Purpose
 
