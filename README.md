@@ -16,17 +16,12 @@ This repository brings together frontend experiments, UI clones, mini-applicatio
 
 ## 🚀 Projects
 
-### 🖥️ UI Clones
-
-| Project | Description | Status | Live Demo |
-|---|---|---|---|
-| Google Clone | Frontend recreation of the Google homepage. | Completed | [View Demo](https://google-beta-one.vercel.app/) |
-| Backpack | UI clone created for frontend practice. | Completed | [View Demo](https://backpack-sepia.vercel.app/) |
 
 ### 🧩 Mini Applications
 
 | Project | Description | Status | Live Demo |
 |---|---|---|---|
+| Google Clone | Frontend recreation of the Google homepage. | Completed | [View Demo](https://google-beta-one.vercel.app/) |
 | Rahnuma Guiding Lights Foundation | Frontend for an NGO website. | Completed | [View Demo](https://rahnuma-peach.vercel.app/) |
 | SkyPulse | Weather application using API data. | Completed | [View Demo](https://skypulse-gilt.vercel.app/) |
 | iTask | React-based task management application. | Completed | [View Demo](https://itask-kappa.vercel.app/) |

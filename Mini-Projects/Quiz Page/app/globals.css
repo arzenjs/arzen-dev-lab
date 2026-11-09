@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { @apply bg-quiz-bg text-quiz-text antialiased; font-family: 'Inter', system-ui, sans-serif; }
+.progress-fill { transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+.option-btn { @apply w-full text-left px-5 py-4 rounded-xl border transition-all duration-200 flex items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-quiz-accent; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { @apply bg-quiz-border rounded-full; }
