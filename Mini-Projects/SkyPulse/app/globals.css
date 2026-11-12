@@ -14,3 +14,18 @@ body { @apply antialiased; font-family: 'Inter', system-ui, sans-serif; min-heig
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 9999px; }
+
+/*
+ * Automatic system dark theme (next-themes applies `.dark` on <html> from
+ * the OS preference — no manual toggle, nothing persisted).
+ * The light theme is the original design above, unchanged. The dark theme
+ * maps each bright sky gradient to a deeper companion of the same hue
+ * family, keeping the weather-driven background logic and the glass UI
+ * identical. `.sky-clear-night` and `.sky-storm` are already dark, so they
+ * are intentionally not overridden.
+ */
+.dark .sky-clear-day { background: linear-gradient(135deg, #0a2547 0%, #0d3f66 30%, #11557f 70%, #0e3a57 100%); }
+.dark .sky-cloudy { background: linear-gradient(135deg, #171d25 0%, #252e38 30%, #37424e 70%, #202835 100%); }
+.dark .sky-rainy { background: linear-gradient(135deg, #0d1420 0%, #1a2430 30%, #26313f 70%, #141c26 100%); }
+.dark .sky-snowy { background: linear-gradient(135deg, #2a3444 0%, #3b4a5f 30%, #4d5f77 70%, #323e4f 100%); }
+.dark .sky-default { background: linear-gradient(135deg, #0a1c40 0%, #14295f 30%, #1d3a7d 70%, #25427e 100%); }

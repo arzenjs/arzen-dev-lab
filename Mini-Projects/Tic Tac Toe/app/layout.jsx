@@ -1,4 +1,5 @@
 import './globals.css'
+import Providers from './providers'
 
 export const metadata = {
   title: 'Tic Tac Toe',
@@ -6,10 +7,12 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  // suppressHydrationWarning: next-themes sets the theme class on <html>
+  // before hydration, so the server and client markup intentionally differ.
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="h-dvh overflow-hidden flex flex-col items-center justify-center relative">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

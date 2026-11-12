@@ -2,6 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Theme tokens. `:root` holds the ORIGINAL dark palette — dark mode renders
+ * exactly as before. `.light` mirrors the same slate ramp inverted
+ * (950↔50, 900↔100, …, 500 stays centered) plus light board accents, so
+ * every relative contrast relationship of the original design is kept.
+ * next-themes applies `.light` / `.dark` on <html> from the OS preference —
+ * no manual toggle, nothing persisted.
+ */
+:root {
+  --slate-50: 248 250 252;
+  --slate-100: 241 245 249;
+  --slate-200: 226 232 240;
+  --slate-300: 203 213 225;
+  --slate-400: 148 163 184;
+  --slate-500: 100 116 139;
+  --slate-600: 71 85 105;
+  --slate-700: 51 65 85;
+  --slate-800: 30 41 59;
+  --slate-900: 15 23 42;
+  --slate-950: 2 6 23;
+
+  --fg: 255 255 255;                     /* original body `text-white` */
+  --board-bg: 30 41 59;                  /* original #1e293b */
+  --board-line: 51 65 85;                /* original #334155 */
+  --board-cell: 15 23 42;                /* original #0f172a */
+  --board-hover: 26 37 54;               /* original #1a2536 */
+  --cell-hover: rgba(30, 41, 59, 0.8);   /* original Cell whileHover tint */
+  --x: 6 182 212;                        /* original #06b6d4 */
+  --o: 244 63 94;                        /* original #f43f5e */
+  --win: 245 158 11;                     /* original #f59e0b */
+  color-scheme: dark;
+}
+
+.light {
+  --slate-50: 2 6 23;
+  --slate-100: 15 23 42;
+  --slate-200: 30 41 59;
+  --slate-300: 51 65 85;
+  --slate-400: 71 85 105;
+  --slate-500: 100 116 139;
+  --slate-600: 148 163 184;
+  --slate-700: 203 213 225;
+  --slate-800: 226 232 240;
+  --slate-900: 241 245 249;
+  --slate-950: 248 250 252;
+
+  --fg: 15 23 42;
+  --board-bg: 255 255 255;
+  --board-line: 203 213 225;
+  --board-cell: 241 245 249;
+  --board-hover: 226 232 240;
+  --cell-hover: rgba(203, 213, 225, 0.85);
+  --x: 8 145 178;                        /* cyan-600 — same family, readable on light */
+  --o: 225 29 72;                        /* rose-600 */
+  --win: 217 119 6;                      /* amber-600 */
+  color-scheme: light;
+}
+
 html,
 body {
   height: 100%;
@@ -9,7 +67,8 @@ body {
 }
 
 body {
-  @apply bg-slate-950 text-white antialiased;
+  @apply bg-slate-950 antialiased;
+  color: rgb(var(--fg));                 /* was `text-white`; keeps dark = white */
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -23,4 +82,11 @@ body::before {
   background-size: 40px 40px;
   pointer-events: none;
   z-index: 0;
+}
+
+/* Keeps the same grid texture visible on the light background. */
+.light body::before {
+  background-image:
+    linear-gradient(rgba(15,23,42,0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15,23,42,0.045) 1px, transparent 1px);
 }

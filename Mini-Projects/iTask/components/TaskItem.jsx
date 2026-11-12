@@ -30,7 +30,10 @@ export default function TaskItem({ task, onToggle, onEdit, onDelete }) {
       {!isEditing && (
         <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-150">
           {!task.completed && <button onClick={() => { setIsEditing(true); setEditValue(task.text) }} className="p-1.5 text-task-muted hover:text-task-accent hover:bg-task-accentLight rounded-lg transition-colors" aria-label="Edit"><Pencil className="w-3.5 h-3.5" /></button>}
-          <button onClick={() => onDelete(task.id)} className="p-1.5 text-task-muted hover:text-task-danger hover:bg-red-50 rounded-lg transition-colors" aria-label="Delete"><Trash2 className="w-3.5 h-3.5" /></button>
+          {/* Only change in this file: added `dark:hover:bg-red-500/10` so the
+              delete hover stays a soft red tint in dark mode instead of
+              blinding near-white red-50. Light mode is unchanged. */}
+          <button onClick={() => onDelete(task.id)} className="p-1.5 text-task-muted hover:text-task-danger hover:bg-red-50 dark:hover:bg-red-500/10 rounded-lg transition-colors" aria-label="Delete"><Trash2 className="w-3.5 h-3.5" /></button>
         </div>
       )}
     </motion.div>

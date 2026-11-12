@@ -104,7 +104,9 @@ export default function Home() {
             <RotateCcw className="w-4 h-4" />Play Again
           </motion.button>
         )}
-        <button onClick={resetAll} className="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white font-medium rounded-xl border border-slate-700 hover:border-slate-600 transition-all duration-200 text-sm">
+        {/* `hover:text-white` → `hover:text-fg`: the only class change in this
+            file. White-on-light would be invisible; --fg is white in dark. */}
+        <button onClick={resetAll} className="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-fg font-medium rounded-xl border border-slate-700 hover:border-slate-600 transition-all duration-200 text-sm">
           Reset Scores
         </button>
       </motion.div>

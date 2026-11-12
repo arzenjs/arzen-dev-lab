@@ -1,7 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+ * Theme tokens. The dark values under `.dark` are the project's original
+ * palette (#0f172a → 15 23 42, #1e293b → 30 41 59, ...). The light values
+ * under `:root` form the complementary light theme of the same design
+ * (slate surfaces, indigo accent). next-themes applies the `.dark` class to
+ * <html> automatically from the OS preference — no manual toggle.
+ */
+:root {
+  --quiz-bg: 241 245 249;          /* slate-100 */
+  --quiz-surface: 255 255 255;     /* white cards on the slate backdrop */
+  --quiz-card: 255 255 255;
+  --quiz-border: 226 232 240;      /* slate-200 */
+  --quiz-accent: 99 102 241;       /* indigo-500 — readable on light */
+  --quiz-accentHover: 79 70 229;   /* indigo-600 */
+  --quiz-text: 15 23 42;           /* slate-900 */
+  --quiz-muted: 100 116 139;       /* slate-500 */
+  --quiz-dim: 148 163 184;         /* slate-400 */
+  color-scheme: light;
+}
+
+.dark {
+  --quiz-bg: 15 23 42;             /* original #0f172a */
+  --quiz-surface: 30 41 59;        /* original #1e293b */
+  --quiz-card: 30 41 59;           /* original #1e293b */
+  --quiz-border: 51 65 85;         /* original #334155 */
+  --quiz-accent: 129 140 248;      /* original #818cf8 */
+  --quiz-accentHover: 99 102 241;  /* original #6366f1 */
+  --quiz-text: 241 245 249;        /* original #f1f5f9 */
+  --quiz-muted: 148 163 184;       /* original #94a3b8 */
+  --quiz-dim: 100 116 139;         /* original #64748b */
+  color-scheme: dark;
+}
+
 body { @apply bg-quiz-bg text-quiz-text antialiased; font-family: 'Inter', system-ui, sans-serif; }
+/* Gentle cross-fade when the OS theme flips. */
+body, .option-btn { transition-property: background-color, border-color, color; transition-duration: 0.2s; }
 .progress-fill { transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
 .option-btn { @apply w-full text-left px-5 py-4 rounded-xl border transition-all duration-200 flex items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-quiz-accent; }
 ::-webkit-scrollbar { width: 4px; }

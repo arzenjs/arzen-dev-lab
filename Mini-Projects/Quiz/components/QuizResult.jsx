@@ -1,14 +1,16 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Trophy, RotateCcw, CheckCircle2, XCircle, Target } from 'lucide-react'
+import { Trophy, RotateCcw, CheckCircle2, XCircle, Target, PartyPopper, Star, ThumbsUp, Dumbbell, BookOpen } from 'lucide-react'
 
+// Grade colors use darker shades in the light theme (lighter ones in dark)
+// so the heading keeps its contrast on both backgrounds.
 function getGrade(p) {
-  if (p >= 90) return { label: 'Outstanding!', emoji: '🏆', color: 'text-yellow-400' }
-  if (p >= 70) return { label: 'Great Job!', emoji: '🌟', color: 'text-quiz-correct' }
-  if (p >= 50) return { label: 'Not Bad!', emoji: '👍', color: 'text-quiz-accent' }
-  if (p >= 30) return { label: 'Keep Trying!', emoji: '💪', color: 'text-orange-400' }
-  return { label: 'Better Luck Next Time', emoji: '📚', color: 'text-quiz-incorrect' }
+  if (p >= 90) return { label: 'Outstanding!', Icon: PartyPopper, color: 'text-yellow-600 dark:text-yellow-400' }
+  if (p >= 70) return { label: 'Great Job!', Icon: Star, color: 'text-quiz-correct' }
+  if (p >= 50) return { label: 'Not Bad!', Icon: ThumbsUp, color: 'text-quiz-accent' }
+  if (p >= 30) return { label: 'Keep Trying!', Icon: Dumbbell, color: 'text-orange-500 dark:text-orange-400' }
+  return { label: 'Better Luck Next Time', Icon: BookOpen, color: 'text-quiz-incorrect' }
 }
 
 export default function QuizResult({ score, totalQuestions, answers, questions, onRestart }) {
@@ -19,7 +21,7 @@ export default function QuizResult({ score, totalQuestions, answers, questions, 
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }}>
       <div className="text-center mb-10">
-        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2, type: 'spring', stiffness: 200 }} className="text-5xl mb-4">{grade.emoji}</motion.div>
+        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2, type: 'spring', stiffness: 200 }} className="mb-4 flex justify-center"><grade.Icon className={`w-12 h-12 ${grade.color}`} strokeWidth={1.75} /></motion.div>
         <h2 className={`text-2xl sm:text-3xl font-extrabold mb-2 ${grade.color}`}>{grade.label}</h2>
         <p className="text-quiz-muted text-sm mb-6">You answered {score} out of {totalQuestions} correctly.</p>
         <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.4 }} className="relative w-32 h-32 mx-auto mb-6">

@@ -1,14 +1,30 @@
+// Theme colors resolve through CSS variables (defined in app/globals.css),
+// so every existing `task-*` class keeps working unchanged in both themes.
+// `:root` holds the ORIGINAL light palette; `.dark` maps it to a consistent
+// dark complement. next-themes toggles the class on <html> from the OS
+// preference — no manual toggle.
+const cssVar = (name) => `rgb(var(${name}) / <alpha-value>)`
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./app/**/*.{js,jsx}', './components/**/*.{js,jsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         task: {
-          bg: '#fafafa', surface: '#ffffff', border: '#e5e7eb',
-          accent: '#6366f1', accentHover: '#4f46e5', accentLight: '#eef2ff',
-          danger: '#ef4444', dangerHover: '#dc2626', success: '#22c55e',
-          text: '#1f2937', muted: '#9ca3af', completed: '#d1d5db',
+          bg: cssVar('--task-bg'),
+          surface: cssVar('--task-surface'),
+          border: cssVar('--task-border'),
+          accent: cssVar('--task-accent'),
+          accentHover: cssVar('--task-accentHover'),
+          accentLight: cssVar('--task-accentLight'),
+          danger: cssVar('--task-danger'),
+          dangerHover: cssVar('--task-dangerHover'),
+          success: cssVar('--task-success'),
+          text: cssVar('--task-text'),
+          muted: cssVar('--task-muted'),
+          completed: cssVar('--task-completed'),
         },
       },
     },

@@ -1,12 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+ * Theme tokens. `:root` holds the ORIGINAL light palette — light mode
+ * renders exactly as before. `.dark` is the complementary dark theme of the
+ * same design (same indigo accent, neutrals mirrored). next-themes applies
+ * `.light` / `.dark` on <html> automatically from the OS preference.
+ */
+:root {
+  --task-bg: 250 250 250;            /* original #fafafa */
+  --task-surface: 255 255 255;       /* original #ffffff */
+  --task-border: 229 231 235;        /* original #e5e7eb */
+  --task-accent: 99 102 241;         /* original #6366f1 */
+  --task-accentHover: 79 70 229;     /* original #4f46e5 */
+  --task-accentLight: 238 242 255;   /* original #eef2ff */
+  --task-danger: 239 68 68;          /* original #ef4444 */
+  --task-dangerHover: 220 38 38;     /* original #dc2626 */
+  --task-success: 34 197 94;         /* original #22c55e */
+  --task-text: 31 41 55;             /* original #1f2937 */
+  --task-muted: 156 163 175;         /* original #9ca3af */
+  --task-completed: 209 213 219;     /* original #d1d5db */
+  --checkbox-border: #d1d5db;        /* original checkbox border */
+  --scroll-thumb: #e5e7eb;           /* original scrollbar thumb */
+  color-scheme: light;
+}
+
+.dark {
+  --task-bg: 15 17 21;
+  --task-surface: 25 28 34;
+  --task-border: 38 43 51;
+  --task-accent: 99 102 241;         /* accent identity kept */
+  --task-accentHover: 129 140 248;   /* hover lightens in dark (mirrors darken-on-light) */
+  --task-accentLight: 34 37 60;
+  --task-danger: 239 68 68;
+  --task-dangerHover: 248 113 113;
+  --task-success: 34 197 94;
+  --task-text: 229 231 235;
+  --task-muted: 107 114 128;
+  --task-completed: 75 85 99;        /* still dimmer than muted, like the original */
+  --checkbox-border: #3a404c;
+  --scroll-thumb: #2a2f3a;
+  color-scheme: dark;
+}
+
 body { @apply bg-task-bg text-task-text antialiased; font-family: 'Inter', system-ui, sans-serif; }
-.task-checkbox { appearance: none; -webkit-appearance: none; width: 22px; height: 22px; border: 2px solid #d1d5db; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; flex-shrink: 0; position: relative; }
-.task-checkbox:hover { border-color: #6366f1; }
-.task-checkbox:checked { background-color: #6366f1; border-color: #6366f1; }
+/* Gentle color fade when the OS theme flips. */
+body { transition: background-color 0.2s ease, color 0.2s ease; }
+.task-checkbox { appearance: none; -webkit-appearance: none; width: 22px; height: 22px; border: 2px solid var(--checkbox-border); border-radius: 6px; cursor: pointer; transition: all 0.2s ease; flex-shrink: 0; position: relative; }
+.task-checkbox:hover { border-color: rgb(var(--task-accent)); }
+.task-checkbox:checked { background-color: rgb(var(--task-accent)); border-color: rgb(var(--task-accent)); }
 .task-checkbox:checked::after { content: ''; position: absolute; left: 6px; top: 2px; width: 6px; height: 11px; border: solid white; border-width: 0 2px 2px 0; transform: rotate(45deg); }
-.task-checkbox:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
+.task-checkbox:focus-visible { outline: 2px solid rgb(var(--task-accent)); outline-offset: 2px; }
 .task-scroll::-webkit-scrollbar { width: 4px; }
 .task-scroll::-webkit-scrollbar-track { background: transparent; }
-.task-scroll::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 9999px; }
+.task-scroll::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 9999px; }
