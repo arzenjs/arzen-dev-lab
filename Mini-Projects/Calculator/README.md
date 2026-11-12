@@ -1,69 +1,64 @@
 # Calculator
 
-A soft neumorphic calculator built with **Next.js (App Router)**,
-**Tailwind CSS** and **next-themes**. It keeps the original light design and
-adds a matching dark theme that follows your operating system's color scheme
-automatically — there is no manual theme toggle by design.
+A modern, neumorphic calculator built with Next.js and React. It provides a clean interface for performing everyday mathematical calculations, with automatic system theme detection.
 
-## Tech stack
+## Live Demo
 
-- Next.js 15 — App Router (`.jsx`, no TypeScript)
-- Tailwind CSS v4 — neumorphic design tokens live in `app/globals.css`
-- next-themes — automatic system theme detection
-- ESLint 9+ (flat config)
+[Open Calculator](https://calculator-alpha-one-34.vercel.app/)
+
+## Tech Stack
+
+- Next.js 15
+- React 19
+- JavaScript
+- Tailwind CSS 4
+- next-themes
 
 ## Features
 
-- Addition, subtraction, multiplication, division
-- Correct operator precedence (`2 + 3 × 4 = 14`)
-- Decimals, percentages, positive/negative conversion (±)
-- Clear all (C), delete last character (⌫), chained calculations
-- Floating-point precision handling (e.g. `0.1 + 0.2 = 0.3`)
-- Division-by-zero and invalid-expression handling (`Error`)
-- Full keyboard support
+- Neumorphic user interface
+- Arithmetic calculations
+- Automatic system theme detection
+- Responsive layout
+- Keyboard interaction
 
-## Keyboard shortcuts
+## Getting Started
 
-| Key             | Action                 |
-| --------------- | ---------------------- |
-| `0–9`           | Enter digits           |
-| `+` `-` `*` `/` | Operators              |
-| `.`             | Decimal point          |
-| `%`             | Percent                |
-| `Enter` / `=`   | Calculate              |
-| `Backspace`     | Delete last character  |
-| `Escape`        | Clear all              |
-
-## Scripts
+Clone the repository:
 
 ```bash
-npm run dev      # start the Next.js dev server
-npm run build    # production build — statically exports the site to dist/
-npm run lint     # run ESLint
+git clone https://github.com/arzenjs/arzen-dev-lab.git
 ```
 
-`next build` is configured with `output: "export"` in `next.config.mjs`;
-`scripts/move-export.mjs` moves the exported static site from `out/` to
-`dist/`. Serve `dist/` with any static file server.
+Navigate to the project directory:
 
-## Project structure
+```bash
+cd arzen-dev-lab/Mini-Projects/Calculator
+```
 
+Install dependencies:
+
+```bash
+npm install
 ```
-├── app/
-│   ├── layout.jsx          # Root layout, metadata, theme <html> wiring
-│   ├── page.jsx            # Home route (renders the calculator)
-│   ├── providers.jsx       # next-themes ThemeProvider (client)
-│   ├── globals.css         # Tailwind + neumorphic design tokens
-│   └── icon.svg            # App icon (file convention)
-├── components/
-│   └── Calculator.jsx      # Display + keypad presentation (client)
-├── hooks/
-│   └── useCalculator.js    # State machine + keyboard support
-├── lib/
-│   └── calculator-engine.js # Pure calculation/input logic
-├── scripts/
-│   └── move-export.mjs     # Moves the static export to dist/
-├── next.config.mjs
-├── postcss.config.mjs
-└── eslint.config.js
+
+Start the development server:
+
+```bash
+npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Author
+
+**Mohammad Arsalan Sheikh (Arsalan)**
+
+- [GitHub](https://github.com/arzenjs)
+- [Portfolio](https://arsalan-portfolio-beige.vercel.app/)
