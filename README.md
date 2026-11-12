@@ -1,6 +1,6 @@
 # Arzen Dev Lab
 
-A collection of web development projects, experiments, and interactive applications.
+A collection of web development projects, experiments, and interactive applications built by **Mohammad Arsalan Sheikh (Arsalan)**.
 
 This repository brings together practical projects developed using modern web technologies. It includes standalone frontend applications, React-based projects, and Next.js applications — each focused on implementing specific functionality, improving development skills, and exploring different aspects of web development.
 
@@ -8,14 +8,14 @@ This repository brings together practical projects developed using modern web te
 
 ### Mini Projects
 
-| Project | Description | Technologies |
-|---|---|---|
-| [Google Clone](./Mini-Projects/Google) | Frontend recreation of the Google homepage with functional search redirection. | HTML, CSS, JavaScript |
-| [Calculator](./Mini-Projects/Calculator) | Neumorphic calculator with arithmetic operations, keyboard support, and automatic system theme detection. | Next.js, React, Tailwind CSS |
-| [Quiz](./Mini-Projects/Quiz) | Interactive quiz application with questions and result screens. | Next.js, React, Tailwind CSS |
-| [SkyPulse](./Mini-Projects/SkyPulse) | Weather application displaying current weather and forecast information. | Next.js, React, Tailwind CSS |
-| [Tic Tac Toe](./Mini-Projects/Tic%20Tac%20Toe) | Interactive Tic Tac Toe game with a game board and score tracking. | Next.js, React, Tailwind CSS |
-| [iTask](./Mini-Projects/iTask) | Task management application for organizing and managing tasks. | Next.js, React, Tailwind CSS |
+| Project | Description | Technologies | Live Demo |
+|---|---|---|---|
+| [Calculator](./Mini-Projects/Calculator) | Neumorphic calculator with arithmetic operations, keyboard support, and automatic system theme detection. | Next.js, React, Tailwind CSS | [View Demo](https://calculator-alpha-one-34.vercel.app/) |
+| [Google Clone](./Mini-Projects/Google) | Frontend recreation of the Google homepage with functional search redirection. | HTML, CSS, JavaScript | [View Demo](https://google-beta-one.vercel.app/) |
+| [Quiz](./Mini-Projects/Quiz) | Interactive quiz application with questions and result screens. | Next.js, React, Tailwind CSS | [View Demo](https://quiz-nu-pied-96.vercel.app/) |
+| [SkyPulse](./Mini-Projects/SkyPulse) | Weather application displaying current weather and forecast information. | Next.js, React, Tailwind CSS | [View Demo](https://skypulse-kappa.vercel.app/) |
+| [Tic Tac Toe](./Mini-Projects/Tic%20Tac%20Toe) | Interactive Tic Tac Toe game with a game board and score tracking. | Next.js, React, Tailwind CSS | [View Demo](https://tictactoe-nine-flax.vercel.app/) |
+| [iTask](./Mini-Projects/iTask) | Task management application for organizing and managing tasks. | Next.js, React, Tailwind CSS | [View Demo](https://itask-ruddy.vercel.app/) |
 
 ## Tech Stack
 
@@ -114,7 +114,7 @@ Projects may evolve over time as functionality, architecture, accessibility, and
 
 - **GitHub:** [@arzenjs](https://github.com/arzenjs)
 - **LinkedIn:** [Arsalan](https://www.linkedin.com/in/arzenjs/)
-- **Portfolio:** [Personal Portfolio](https://arsalan-portfolio-beige.vercel.app/)
+- **Portfolio:** [arsalan-portfolio-beige.vercel.app](https://arsalan-portfolio-beige.vercel.app/)
 
 ---
 
